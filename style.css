@@ -1,0 +1,907 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    transition: width 2s ease-in-out;
+}
+
+.image-container {
+    width: 400px;
+    
+    height: 400px;
+}
+
+.video-container {
+    width: auto;
+    height: 550px;
+}
+img, video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.sidebar {
+    position: fixed;
+    top: 55px;
+    right: 0;
+    width: 350px;
+    height: 88%;
+    background-color: #1d1d1d;
+    color: white;
+    flex-direction: column;
+    box-shadow: -8px -1px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 25px 25px 5px 5px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: none;
+    max-height: 720px;
+    font-family: Arial, sans-serif;
+transition: all 0.5s ease-in-out;
+}
+.sidebar-img {
+    width: 100%;
+    height: auto;
+    border-radius: 25px 25px 0 0;
+}
+.sidebar-content {
+    margin-top: 5px;
+    padding: 5px;
+}
+.sobre {
+    background-color: #333333;
+    border-radius: 5px;
+    padding: 3px;
+    background-image: url(''); /* Adicione uma imagem de fundo */
+    background-size: contain; /* Ajusta a imagem ao tamanho do elemento */
+    background-repeat: no-repeat; /* Não repete a imagem */
+    background-color: #333; /* Cor de fundo azul */
+    height: auto;
+    width: auto;
+}
+.artista {
+    width: 30%;
+    height: auto;
+}
+.button {
+    background-color: #ff0000;
+    color: black;
+    border: none;
+    padding: 0px 0px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 10px;
+    position: fixed;
+    bottom: 5px;
+    right: 620px;
+    transition: background-color 0.2s ease-in-out, border 0.3s ease-in-out;
+    background: none;
+    height: 60px;
+}
+.button:hover {
+    border: 1px solid black;
+    border: none;
+}
+.button#playPauseBtn {
+display: none;
+}
+
+.button#random {
+    position: fixed;
+    bottom: 18px;
+    right: 550px;
+    height: 30px;
+    padding: 1px 1px 31px;
+    border-radius: 100px;
+    background: none;
+}
+
+.button#antRandom {
+    position: fixed;
+    bottom: 18px;
+    right: 590px;
+    height: 30px;
+    padding: 1px 1px 31px;
+    border-radius: 100px;
+    background: none;
+
+}
+.button#antRandom:hover {
+background-color: black;
+}
+.button#random:hover {
+background-color: black;
+}
+.button#loopBtn {
+    background-color: #520096;
+    position: fixed;
+    bottom: 40px;
+    right: 200px;
+}
+.button#lyricsBtn {
+    background-color: #520096;
+    position: fixed;
+    bottom: 0px;
+    right: 50px;
+}
+
+.button#cardbtn:hover {
+border: none;
+}
+.button#big {
+    background-color: #520096;
+    position: fixed;
+    bottom: 0px;
+    right: 1050px;
+    width: 200px;
+    display: none;
+}
+.button#lyricsBtn {
+    background-color: #520096;
+    position: fixed;
+    bottom: -2px;
+    right: 10px;
+    width: 85px;
+}
+.control-bar {
+    width: 100%;
+    height: 48px;
+    background-color: #000000;
+    color: white;
+    display: none;
+    justify-content: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+}
+
+#hora {
+    font-size: 24px;
+    font-weight: bold;
+    position: fixed;
+    right: 10px;
+    top: 5px;
+    display: none;
+  }
+
+.progress-container {
+    display: none;
+    align-items: center;
+    width: 320px;
+    margin-top: 20px;
+    position: fixed;
+    bottom: 10px;
+    right: 500px;
+    transition: 2s;
+}
+.time {
+    font-size: 14px;
+    margin: 0 10px;
+}
+.progress-bar {
+    position: relative;
+    width: 100%;
+    height: 5px;
+    background-color: #333333;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.progress {
+    height: 100%;
+    background-color: #8c00ff;
+    width: 0%;
+    border-radius: 10px 0 0 10px;
+}
+.progress-bar:hover {
+    color: lawngreen;
+}
+.rg_embed_link {
+    background-color: #333;
+    color: #fff;
+    border-radius: 3px;
+}
+pre {
+    color: white;
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    white-space: pre-wrap;
+}
+#lyrics {
+    display: none; /* Começa escondido */
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-y: auto; /* Permite a rolagem vertical */
+    font-family: 'Darumadrop One', cursive; /* Títulos ou seções com Darumadrop One */
+    font-size: 30px;
+    opacity: 0.8;
+    margin-top: 10px;
+    width: 94%;
+    height: 700px;
+    margin-left: 10px;
+    transition: all 0.2s ease-in-out;
+}
+
+.musicbtn {
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    height: 100px;
+    border-radius: 5px;
+    transition: background-color 0.2s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px; /* Espaço entre a imagem e o texto */
+    color: white;
+    background: none;
+    margin-bottom: 0px;
+    
+}
+
+.musicbtn img {
+    width: 80px; /* Ajuste o tamanho da imagem conforme necessário */
+    height: 100%;
+    border-radius: 3px;
+}
+
+.mic {
+    width: 30px;
+    height: auto;
+}
+.logo {
+    width: 50px;
+    height: auto;
+    position: fixed;
+    top: 0px;
+    left: 80px;
+    border: 0;
+    color: white;
+    font-family: "Grechen Fuemen", cursive;
+    font-size: 25px;
+}
+.logo#button {
+    width: 50px;
+    height: auto;
+    position: fixed;
+    top: 15px;
+    left: 20px;
+    border: 0;
+    background-color: black;
+}
+.logo#img {
+ background-color: black;
+ border-radius: 5px;
+ position: fixed;
+ top: 10px;
+ left: 5px;
+ width: 40px;
+ height: auto;
+}
+.logo#text {
+    position: fixed;
+    top: 5px;
+    left: 50px;
+}
+.bar {
+    width: 100%;
+    height: 3px;
+    background-color: rgb(80, 80, 80);
+    position: fixed;
+    top: 42px;
+    left: 0px;
+    transition: width 0.6s;
+
+}
+#searchBar {
+    height: 8px;
+    border: 0;
+    padding: 10px;
+    width: 3000px;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-left: 10px;
+    border: none;
+    position: fixed;
+    left: 0px;
+    top: 60px;
+    background-color: rgb(123, 255, 0);
+    color: #8c00ff;
+    width: 75%;
+    transition: all 0.7s ease-in-out;
+}
+#searchBar:hover {
+    background-color: #8c00ff;
+    color: rgb(123, 255, 0);
+}
+.pop {
+    background-color: rgb(29, 29, 29);
+    width: 42%;
+    height: auto;
+    margin-top: 5px;
+    border-radius: 5px;
+    margin: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    transition: background-color 0.2s ease-in-out;
+    border: 2px solid #8c00ff;
+    padding-bottom: 5px;
+}
+.pop:hover {
+    background-color: #313131;
+}
+
+.bar#down {
+    width: 100%;
+    height: 3px;
+    background-color: rgb(27, 27, 27);
+    position: fixed;
+    top: 865px;
+    left: 0px;
+    display: none;
+    z-index: 10;
+
+}
+p#musicartist {
+    color: rgb(194, 194, 194);
+    font-family: 'Metal Mania', cursive; /* Títulos ou seções com Metal Mania */
+    font-size: 20px;
+}
+p#msgartist {
+    color: rgb(161, 161, 161);
+    font-family: 'Rubik Glitch', sans-serif; /* Títulos ou seções com Rubik Glitch */
+
+}
+h1#music {
+    color: rgb(255, 255, 255);
+    position: fixed;
+    bottom: 10px;
+    left: 240px;
+    transition: all 2s ease-in-out; /* Transição suave de 2 segundos */
+    font-family: "Grechen Fuemen", cursive;
+    font-size: auto;
+}
+.fade-in {
+            opacity: 0; /* Elemento começa invisível */
+}
+ .visible {
+            opacity: 1; /* Elemento se torna visível */
+ }
+
+ .hide {
+            opacity: 0; /* Elemento se torna invisível */
+ }
+/* Estilos específicos para dispositivos móveis */
+@media screen and (max-width: 768px) {
+    .sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1d1d1d;
+    color: white;
+    display: none;
+    flex-direction: column;
+    box-shadow: -4px 0px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 25px 25px 5px 5px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 830px;
+    }
+    .pop {
+    background-color: #1f1f1f;
+    width: 100%;
+    height: 220px;
+    border-radius: 5px;
+}
+    #content {
+        max-height: 750px;
+        overflow-x: hidden;
+    }
+    #progress-container {
+    max-width: 250px;
+        width: 999px;
+    margin-top: 20px;
+    position: fixed;
+    bottom: 20px;
+    left: 113px;
+}
+    .button {
+    bottom: -10px;
+    right: 425px;
+}
+    .button#loopBtn {
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 2px;
+    margin: 10px;
+    position: fixed;
+    bottom: -50px;
+    right: 210px;
+}
+    .button#big {
+    background-color: #520096;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 2px;
+    margin: 10px;
+    position: fixed;
+    bottom: 20px;
+    width: 200px;
+    display: none;
+        opacity: 0;
+}
+    #muteButton {
+        opacity: 0;
+    }
+    #vol {
+        opacity: 0;
+    }
+}
+
+.animacao {
+    animation: exemplo 1s 1; /* 1 aqui indica que a animação ocorre apenas uma vez */
+  }
+
+  @keyframes exemplo {
+    0% {
+      bottom: -5px;
+
+    }
+
+    100% {
+      bottom: 20px;
+
+    }
+  }
+
+  .button#random {
+    position: fixed;
+    bottom: 3px;
+    right: 400px;
+}
+
+.button#antRandom {
+    position: fixed;
+    bottom: 3px;
+    right: 470px;
+}
+
+#customMenu {
+background-color: rgb(20, 20, 20);
+border-radius: 5px;
+width: auto;
+height: auto;
+padding: 5px;
+color: #520096;
+transition: all 0.2s ease-in-out;
+}
+#customMenu:hover {
+color: #8c00ff;
+}
+
+.content {
+    background-color: rgb(29, 29, 29);
+    margin: 10px;
+    border-radius: 5px;
+    padding: 5px;
+    width: 94%;
+    overflow-x: auto;
+    max-height: 760px;
+    transition: all 1s ease-in-out;
+}
+
+@keyframes content {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+    
+}
+
+/* Estilos para o container do carrossel */
+.carousel-container {
+            width: auto;
+            max-width: 420px;
+            position: relative;
+            overflow: hidden;
+            padding: 5px;
+            border-radius: 10px;
+            transition: background-color 0.7s ease-in-out;
+}
+/* Estilos para as imagens do carrossel */
+.carousel-slide {
+            display: none;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+}    
+.carousel-slide.active {
+            display: block;
+            opacity: 1;
+}   
+
+/* Estilos para a barra de progresso */
+.progress-bar2 {
+                    position: relative;
+                    width: 100%;
+                    height: 5px;
+                    background-color: #333333;
+                    border-radius: 5px;
+                    overflow: hidden;
+                    margin-top: 5px;
+}
+        
+.progress2 {
+                    height: 100%;
+                    background-color: #8c00ff;
+                    width: 0%;
+}
+
+.loop {
+    width: 30px;
+    height: auto;
+}
+
+.button#loopBtn {
+    position: fixed;
+    bottom: -2px;
+    right: 98px;
+}
+/* Estilos para elementos com tooltip */
+.tooltip-hover {
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+}
+/* Tooltip para o elemento com id="elemento1" */
+#big::after {
+            content: "Ver Letra e Ativar / Desativar a Tela Cheia";
+            visibility: hidden;
+            width: 150px;
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px;
+            position: absolute;
+            z-index: 1;
+            bottom: 210%; /* Posiciona o tooltip acima do elemento */
+            left: 50%;
+            margin-left: -75px;
+            opacity: 0;
+            transition: opacity 0.3s;
+}
+/* Tooltip para o elemento com id="elemento2" */
+#lyricsBtn::after {
+            content: "Ver Letra";
+            visibility: hidden;
+            width: 150px;
+            background-color: rgb(0, 0, 0);
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%; /* Posiciona o tooltip acima do elemento */
+            left: 50%;
+            margin-left: -75px;
+            opacity: 0;
+            transition: opacity 0.3s;
+}
+
+#loopBtn::after {
+            content: "Ativar / Desativar loop";
+            visibility: hidden;
+            width: 150px;
+            background-color: rgb(0, 0, 0);
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px;
+            position: absolute;
+            z-index: 1;
+            bottom: 195%; /* Posiciona o tooltip acima do elemento */
+            left: 50%;
+            margin-left: -75px;
+            opacity: 0;
+            transition: opacity 0.3s;
+}
+/* Exibir tooltip no hover */
+#big:hover::after,
+#loopBtn:hover::after,
+#lyricsBtn:hover::after {
+            visibility: visible;
+            opacity: 1;
+}
+
+#shuffleBtn{
+    position: fixed;
+    bottom: 55px;
+    right: 98px;
+    height: 55px;
+    background-color: #520096; /* Cor da barra de rolagem ao passar o mouse */
+}
+
+/* Estilos para a barra de rolagem */
+::-webkit-scrollbar {
+    width: 6px; /* Largura da barra de rolagem */
+    transition: all 0.5s ease-in-out;
+
+}
+
+::-webkit-scrollbar-track {
+    background: none; /* Cor do fundo da barra de rolagem */
+    border-radius: 10px;
+
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #8c00ff; /* Cor da barra de rolagem */
+    border-radius: 2px;
+
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #520096; /* Cor da barra de rolagem ao passar o mouse */
+    
+}
+
+.but {
+    background-color: #8c00ff;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 2px;
+    margin: 10px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.but:hover {
+    background-color: #520096; /* Cor da barra de rolagem ao passar o mouse */
+}
+
+.musicbtn:hover {
+    background-color: #520096; /* Cor da barra de rolagem ao passar o mouse */
+}
+
+/* Add your existing CSS here */
+
+#carousel-container {
+    background-color: white;
+}
+
+#anuncio-logo {
+    border-color: black;
+    height: auto;
+    width: 390px;
+}
+
+#Search-Box {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#Fechar-Anuncio {
+    color: black;
+    background: none;
+    border: none;
+}
+
+#muteButton {
+    position: fixed;
+    bottom: 0px;
+    right: 310px;
+    width: 60px;
+    height: 40px;
+}
+
+#hidebtn2 {
+    display: none;
+}
+
+.volumeBar {
+    position: fixed;
+    top: 870px;
+    right: 180px;
+}
+
+    /* Estilo para o controle deslizante de volume */
+    input[type="range"] {
+        -webkit-appearance: none; /* Remove o estilo padrão do navegador */
+        width: 130px;
+        height: 8px;
+        background: rgb(37, 37, 37); /* Cor de fundo da faixa */
+        border-radius: 5px; /* Cantos arredondados */
+        outline: none; /* Remove o contorno padrão */
+        opacity: 0.7; /* Transparência */
+        transition: opacity .2s; /* Transição suave */
+      }
+  
+      input[type="range"]:hover {
+        opacity: 1; /* Opacidade total ao passar o mouse */
+      }
+  
+      input[type="range"]::-webkit-slider-thumb {
+        -webkit-appearance: none; /* Remove o estilo padrão do navegador */
+        appearance: none;
+        width: 16px;
+        height: 16px;
+        background: #8c00ff; /* Cor do polegar (indicador) */
+        border-radius: 50%; /* Polegar arredondado */
+        cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+      }
+  
+      input[type="range"]::-moz-range-thumb {
+        width: 16px;
+        height: 16px;
+        background: #8c00ff;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+#mslogo {
+    transition: all 2s ease-in-out;
+}
+
+.perfil {
+    position: fixed;
+    right: 0px;
+    top: 0;
+    height: auto;
+    width: 50px;
+    margin: 5px;
+    transition: all 1s ease-in-out;
+}
+
+.perfil#per {
+    position: fixed;
+    right: 865px;
+    top: 430px;
+}
+
+#fotoDiv {
+    background-color: #0f0f0f;
+    width: 600px;
+    height: 300px; 
+    border-radius: 10px;
+    position: fixed;
+    left: 300px;
+    top: 300px;
+    color: #520096;
+    transition: all 0.2s ease-in-out;
+    display: none;
+    opacity: 0.9;
+    position: absolute;
+    font-family: 'Bebas Neue', sans-serif; /* Títulos ou seções com Bebas Neue */
+    font-size: auto;
+}
+#fotoDiv:hover {
+    color: #8c00ff;
+    opacity: 1;
+}
+
+#close  {
+    position: fixed;
+    left: 875px;
+    top: 305px;
+}
+
+#musicname {
+    font-family: 'Bebas Neue', sans-serif; /* Títulos ou seções com Bebas Neue */
+    font-size: 30px;
+}
+
+#categoria {
+    font-family: 'Sixtyfour Convergence', sans-serif; /* Títulos ou seções com Sixtyfour Convergence */
+
+}
+#credits {
+    font-family: 'Rubik Glitch', sans-serif; /* Títulos ou seções com Rubik Glitch */
+
+}
+#hora {
+    font-family: 'Rubik Glitch Pop', sans-serif; /* Títulos ou seções com Rubik Glitch Pop */
+
+}
+
+#video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit:fill; /* Isso garante que o vídeo cubra toda a tela */
+    z-index: -1; /* Coloca o vídeo atrás do conteúdo */
+    display: none;
+}
+
+.auto {
+    background: none;
+    border: none;
+    width: 100%;
+}
+
+#lateral {
+    display: flex;
+}
+#customMenu:hover {
+color: #8c00ff;
+}
+
+.name {
+    position: fixed;
+    right: 0;
+    top: 0;
+    animation: exemplo2 2s 1; /* 1 aqui indica que a animação ocorre apenas uma vez */
+    display: none; /* Começa oculto */
+}
+
+  @keyframes exemplo2 {
+    0% {
+      right: 0px;
+
+    }
+
+    50% {
+      right: 100px;
+
+    }
+
+    100% {
+        right: 0px;
+
+  
+      }
+
+  }
+
+  body {  
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(''); /* Adicione uma imagem de fundo do artista */
+    background-size: fill; /* Ajusta a imagem ao tamanho da tela */
+    object-fit: cover; /* Para cobrir toda a área do contêiner */
+    background-color: #000000;
+    background-repeat: no-repeat; /* Não repete a imagem */
+    overflow-y: hidden;
+    transition: all 0.0s ease-in-out;
+    animation: content 5s 1;
+    overflow-x: hidden;
+}
+
+#cart {
+    position: fixed;
+    top: 60px;
+    right: 15px;
+    color: rgb(0, 0, 0);
+    display: none;
+
+}
+
+#marquee {
+    font-family: 'Metal Mania', cursive; /* Títulos ou seções com Metal Mania */
+    font-size: 30px;
+}
