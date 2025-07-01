@@ -2869,8 +2869,8 @@ Artificial façade (la-la-la-la, la, la-la)<br>
     // Muda para a primeira música
     let texto = "Letra disponivel em breve!";
     
-    document.getElementById('musicname').textContent = "Montagem Santa Fè";
-    document.getElementById('music').textContent = "Montagem Santa Fè";
+    document.getElementById('musicname').textContent = "Montagem";
+    document.getElementById('music').textContent = "Montagem";
     document.getElementById('musicartist').textContent = "qaraqshy";
     document.getElementById('msgartist').textContent = "Danilo Trujillano, mais conhecido como Iron Master é um jovem de 22 anos que se tornou a mais nova revelação dentro da cena Geek no Brasil. Começou a fazer músicas com uma brincadeira entre amigos e após a segunda postagem, se tornou viral nas demais plataformas com a famosa frase 'Raça absoluta, além da consciência'. A partir deste momento, Iron começou a produzir músicas voltadas para o público Nerd/Geek, Gamer e Amante de desenhos, expandindo o nicho Geek, que até então, era voltado para a produção de músicas sobre animes. Suas músicas variam desde Rock à Jazz, contando com guitarras, batidas eletrônicas e muito mais. Sua música mais popular é o rap da animação 'Ben 10 Força Alienígena' lançada em 24 de Dezembro de 2020. Atualmente Iron tem uma linha de camisetas com as frases mais marcantes de suas músicas mais famosas e vem se aprimorando cada vez mais para abranger toda a comunidade. O canal Iron Master conta com mais de 1 milhão de inscritos e mais de 270 milhões de visualizações, recebendo feedbacks e comentários constantes do público da comunidade geek.";
     document.getElementById('musicvideo').style.display = "block"; // Mostra o vídeo
@@ -2883,7 +2883,7 @@ Artificial façade (la-la-la-la, la, la-la)<br>
     mudarFundo('musica40');
 
     // Atualiza o áudio que vai tocar
-    document.getElementById('audio').src = "https://soundcloud.com/batyrzhan-zhappasbaev/qaraqshy-montagem-santa-fe?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"; // Troca o áudio
+    document.getElementById('audio').src = "https://soundcloud.com/adielphonk-scmusic/montagem-conquest?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"; // Troca o áudio
 
 
 }
