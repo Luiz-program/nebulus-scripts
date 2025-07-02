@@ -3180,3 +3180,20 @@ async function atualizarCapaMusica() {
 document.getElementById('abrirJanela').addEventListener('click', () => {
     ipcRenderer.send('abrir-janela-secundaria');
 });
+
+document.getElementById("lateral").innerHTML = `
+<div style="display: flex;" class="pop" id="musicas">
+  <h2 style="color: white;" id="categoria">Em alta no Nebulus:</h2>
+
+  <!--Botões de músicas-->
+  <button class="musicbtn" onclick="mudarMusica('1')"><img src="https://th.bing.com/th/id/OIP.eieU2Pf0CBzvtdR_L74OdQHaHa?rs=1&pid=ImgDetMain"><br>SPOOKY</button>
+  <button class="musicbtn" onclick="mudarMusica('2')"><img src="https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/70/7f/d9/707fd990-ab03-c28a-ee1d-9005ac77ed58/artwork.jpg/1200x1200bf-60.jpg"><br>Fall Asleep</button>
+  <button class="musicbtn" onclick="mudarMusica('3')"><img src="https://m.media-amazon.com/images/I/51+lpcg-DGL._UXNaN_FMjpg_QL85_.jpg"><br>Welcome Home</button>
+  <button class="musicbtn" onclick="mudarMusica('4')"><img src="https://i1.sndcdn.com/artworks-dBPml1DnccTWMjZS-ASdDzw-t500x500.jpg"><br>Forever</button>
+
+  <div id="extra">
+    <button class="musicbtn" style="display: none;" onclick="mudarMusica('40')"><img src="https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/18/e4/f3/18e4f365-2685-a684-7794-c9c2b02d28f8/663918203361.jpg/600x600bb.jpg"><br>Montagem Santa Fè</button>
+    <!-- (continue colando os botões restantes aqui, todos entre crases) -->
+  </div>
+</div>
+`;
