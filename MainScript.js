@@ -2865,6 +2865,29 @@ Artificial façade (la-la-la-la, la, la-la)<br>
     // Atualiza o áudio que vai tocar
     document.getElementById('audio').src = "Material/MONTAGEM SANTA FÈ - qaraqshy.mp3"; // Troca o áudio
 
+Material/BURNING MEMORY FUNK - DJ FKU.mp3
+
+} else if (musica === '41') {
+    // Muda para a primeira música
+    let texto = "Letra disponivel em breve!";
+    
+    document.getElementById('musicname').textContent = "Montagem Santa Fè";
+    document.getElementById('music').textContent = "Montagem Santa Fè";
+    document.getElementById('musiclogo').src = "https://i.scdn.co/image/ab67616d0000b2734d9481fd3558b4b11afc70d2";
+    document.getElementById('musicartist').textContent = "qaraqshy";
+    document.getElementById('msgartist').textContent = "Danilo Trujillano, mais conhecido como Iron Master é um jovem de 22 anos que se tornou a mais nova revelação dentro da cena Geek no Brasil. Começou a fazer músicas com uma brincadeira entre amigos e após a segunda postagem, se tornou viral nas demais plataformas com a famosa frase 'Raça absoluta, além da consciência'. A partir deste momento, Iron começou a produzir músicas voltadas para o público Nerd/Geek, Gamer e Amante de desenhos, expandindo o nicho Geek, que até então, era voltado para a produção de músicas sobre animes. Suas músicas variam desde Rock à Jazz, contando com guitarras, batidas eletrônicas e muito mais. Sua música mais popular é o rap da animação 'Ben 10 Força Alienígena' lançada em 24 de Dezembro de 2020. Atualmente Iron tem uma linha de camisetas com as frases mais marcantes de suas músicas mais famosas e vem se aprimorando cada vez mais para abranger toda a comunidade. O canal Iron Master conta com mais de 1 milhão de inscritos e mais de 270 milhões de visualizações, recebendo feedbacks e comentários constantes do público da comunidade geek.";
+    document.getElementById('musicvideo').style.display = "block"; // Mostra o vídeo
+    document.getElementById('musicvideo').querySelector('source').src = ""; // Vídeo da música
+    document.getElementById('artistimg').src = "https://yt3.googleusercontent.com/LbhsmbjV50pJngJrXoCPlwLNvh6dsNhSAepCZHGGL92Vexks7GxPuvR_eztGYW7-uJYiSa2C2w=s160-c-k-c0x00ffffff-no-rj"; // Foto do artista
+    document.getElementById("lyrics").innerHTML = texto;
+    document.getElementById('sobre').style.backgroundImage = "url('')"; // Foto do artista
+    document.getElementById('credits').innerHTML = "O Homem de Roxo<br><br>Interpretada por<br>NeKo Music<br><br>Composta por<br>Alisson Barbosa Chagas<br><br>Produzida por<br>-<br><br>Fonte: Neko";
+    document.getElementById('video-background').src = '';
+    mudarFundo('musica40');
+
+    // Atualiza o áudio que vai tocar
+    document.getElementById('audio').src = "Material/BURNING MEMORY FUNK - DJ FKU.mp3"; // Troca o áudio
+
 
 }
 
