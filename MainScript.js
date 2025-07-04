@@ -2843,19 +2843,18 @@ Artificial façade (la-la-la-la, la, la-la)<br>
     // Atualiza o áudio que vai tocar
     document.getElementById('audio').src = "Material/O Homem de Roxo - NeKo Music.mp3"; // Troca o áudio
 
-
 } else if (musica === '40') {
     // Muda para a primeira música
     let texto = "Letra disponivel em breve!";
     
     document.getElementById('musicname').textContent = "Montagem Santa Fè";
     document.getElementById('music').textContent = "Montagem Santa Fè";
-    document.getElementById('musiclogo').src = "https://i.scdn.co/image/ab67616d0000b2734d9481fd3558b4b11afc70d2";
+    document.getElementById('musiclogo').src = "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/18/e4/f3/18e4f365-2685-a684-7794-c9c2b02d28f8/663918203361.jpg/600x600bb.jpg";
     document.getElementById('musicartist').textContent = "qaraqshy";
     document.getElementById('msgartist').textContent = "Danilo Trujillano, mais conhecido como Iron Master é um jovem de 22 anos que se tornou a mais nova revelação dentro da cena Geek no Brasil. Começou a fazer músicas com uma brincadeira entre amigos e após a segunda postagem, se tornou viral nas demais plataformas com a famosa frase 'Raça absoluta, além da consciência'. A partir deste momento, Iron começou a produzir músicas voltadas para o público Nerd/Geek, Gamer e Amante de desenhos, expandindo o nicho Geek, que até então, era voltado para a produção de músicas sobre animes. Suas músicas variam desde Rock à Jazz, contando com guitarras, batidas eletrônicas e muito mais. Sua música mais popular é o rap da animação 'Ben 10 Força Alienígena' lançada em 24 de Dezembro de 2020. Atualmente Iron tem uma linha de camisetas com as frases mais marcantes de suas músicas mais famosas e vem se aprimorando cada vez mais para abranger toda a comunidade. O canal Iron Master conta com mais de 1 milhão de inscritos e mais de 270 milhões de visualizações, recebendo feedbacks e comentários constantes do público da comunidade geek.";
     document.getElementById('musicvideo').style.display = "block"; // Mostra o vídeo
     document.getElementById('musicvideo').querySelector('source').src = ""; // Vídeo da música
-    document.getElementById('artistimg').src = "https://yt3.googleusercontent.com/LbhsmbjV50pJngJrXoCPlwLNvh6dsNhSAepCZHGGL92Vexks7GxPuvR_eztGYW7-uJYiSa2C2w=s160-c-k-c0x00ffffff-no-rj"; // Foto do artista
+    document.getElementById('artistimg').src = "https://yt3.googleusercontent.com/vY88lGqdFxTFyPa-cXFE3UkW9EtE9XcYOt6ewCMg77ZcZLvDHEwh7KszPgWYAiU0S-FWKzDylA=s160-c-k-c0x00ffffff-no-rj"; // Foto do artista
     document.getElementById("lyrics").innerHTML = texto;
     document.getElementById('sobre').style.backgroundImage = "url('')"; // Foto do artista
     document.getElementById('credits').innerHTML = "O Homem de Roxo<br><br>Interpretada por<br>NeKo Music<br><br>Composta por<br>Alisson Barbosa Chagas<br><br>Produzida por<br>-<br><br>Fonte: Neko";
@@ -2865,16 +2864,14 @@ Artificial façade (la-la-la-la, la, la-la)<br>
     // Atualiza o áudio que vai tocar
     document.getElementById('audio').src = "Material/MONTAGEM SANTA FÈ - qaraqshy.mp3"; // Troca o áudio
 
-Material/BURNING MEMORY FUNK - DJ FKU.mp3
-
 } else if (musica === '41') {
     // Muda para a primeira música
     let texto = "Letra disponivel em breve!";
     
-    document.getElementById('musicname').textContent = "Montagem Santa Fè";
-    document.getElementById('music').textContent = "Montagem Santa Fè";
-    document.getElementById('musiclogo').src = "https://i.scdn.co/image/ab67616d0000b2734d9481fd3558b4b11afc70d2";
-    document.getElementById('musicartist').textContent = "qaraqshy";
+    document.getElementById('musicname').textContent = "BURNING MEMORY FUNK";
+    document.getElementById('music').textContent = "BURNING MEMORY FUNK";
+    document.getElementById('musiclogo').src = "";
+    document.getElementById('musicartist').textContent = "DJ FKU";
     document.getElementById('msgartist').textContent = "Danilo Trujillano, mais conhecido como Iron Master é um jovem de 22 anos que se tornou a mais nova revelação dentro da cena Geek no Brasil. Começou a fazer músicas com uma brincadeira entre amigos e após a segunda postagem, se tornou viral nas demais plataformas com a famosa frase 'Raça absoluta, além da consciência'. A partir deste momento, Iron começou a produzir músicas voltadas para o público Nerd/Geek, Gamer e Amante de desenhos, expandindo o nicho Geek, que até então, era voltado para a produção de músicas sobre animes. Suas músicas variam desde Rock à Jazz, contando com guitarras, batidas eletrônicas e muito mais. Sua música mais popular é o rap da animação 'Ben 10 Força Alienígena' lançada em 24 de Dezembro de 2020. Atualmente Iron tem uma linha de camisetas com as frases mais marcantes de suas músicas mais famosas e vem se aprimorando cada vez mais para abranger toda a comunidade. O canal Iron Master conta com mais de 1 milhão de inscritos e mais de 270 milhões de visualizações, recebendo feedbacks e comentários constantes do público da comunidade geek.";
     document.getElementById('musicvideo').style.display = "block"; // Mostra o vídeo
     document.getElementById('musicvideo').querySelector('source').src = ""; // Vídeo da música
@@ -2888,7 +2885,240 @@ Material/BURNING MEMORY FUNK - DJ FKU.mp3
     // Atualiza o áudio que vai tocar
     document.getElementById('audio').src = "Material/BURNING MEMORY FUNK - DJ FKU.mp3"; // Troca o áudio
 
+} else if (musica === '42') {
+    // Muda para a primeira música
+    let texto = `
+    DJ Orbital, toca a putaria, porra (toca a putaria, porra)
 
+    'Tá to', 'tá to', 'tá tocando
+    'Tá to', 'tá to', 'tá tocando
+    'Tá to', 'tá to', 'tá tocando
+    'Tá to', 'tá to', 'tá tocando
+
+    Desse jeito me excita
+    Ela senta na pica, rebola na pica
+    De quatro na, quatro na, quatro na, quatro na
+    Quatro na pica, na pica ela quica
+
+    Ela quica, ela quica, ela quica, ela quica
+    Ela quica, ela quica, ela quica, ela quica
+    Ela quica, ela quica, ela quica, ela quica, ela
+    Quatro na pica, na pica ela quica
+
+    Ela quica, ela quica, ela quica, ela quica
+    Ela quica, ela quica, ela quica, ela quica
+    Ela quica, ela quica, ela quica, ela quica, ela
+    Quatro na pica, na pica ela quica, ela
+
+    Ela só quer dar pa' traficante
+Ela não quer dar pa' qualquer um
+
+Vai, ahn, joga o popô, vai
+Ahn, ahn, joga o popô, vai
+Vai, ahn, joga o popô, vai
+Ahn, ahn, joga o popô, vai
+
+Joga o po', joga o po', joga o po', joga o po'
+Joga o po', joga o po', joga o popô, vai
+Joga o po', joga o po', joga o po', joga o po'
+Joga o po', joga o po', joga o popô, vai
+
+Vai, ahn, joga o popô, vai
+Ahn, ahn, joga o popô, vai
+Vai, ahn, joga o popô, vai
+Ahn, ahn, joga o popô, vai
+
+Joga o po', joga o po', joga o po', joga o po'
+Joga o po', joga o po', joga o popô, vai
+Joga o po', joga o po', joga o po', joga o po'
+Joga o po', joga o po', joga o popô, vai
+
+Vai, vai, vai, vai
+Vai, vai, joga o popô, vai
+Vai, vai, vai, vai
+Vai, vai, joga o popô, vai
+
+Vai, vai, vai, vai
+Vai, vai, joga o popô, vai
+Vai, vai, vai, vai
+Vai, vai, joga o popô, vai
+
+DJ Orbital, toca a putaria, porra (toca a putaria, porra)
+
+'Tá to', 'tá to', 'tá tocando
+'Tá to', 'tá to', 'tá tocando
+'Tá to', 'tá to', 'tá tocando
+'Tá to', 'tá to', 'tá tocando
+
+Desse jeito me excita
+Ela senta na pica, rebola na pica
+De quatro na, quatro na, quatro na, quatro na
+Quatro na pica, na pica ela quica
+
+Ela quica, ela quica, ela quica, ela quica
+Ela quica, ela quica, ela quica, ela quica
+Ela quica, ela quica, ela quica, ela quica, ela
+Quatro na pica, na pica ela quica
+
+Ela quica, ela quica, ela quica, ela quica
+Ela quica, ela quica, ela quica, ela quica
+Ela quica, ela quica, ela quica, ela quica, ela
+Quatro na pica, na pica ela quica, ela
+
+Ela só quer dar pa' traficante
+Ela não quer dar pa' qualquer um
+
+Vai, ahn, joga o popô, vai
+Ahn, ahn, joga o popô, vai
+Vai, ahn, joga o popô, vai
+Ahn, ahn, joga o popô, vai
+
+Joga o po', joga o po', joga o po', joga o po'
+Joga o po', joga o po', joga o popô, vai
+Joga o po', joga o po', joga o po', joga o po'
+Joga o po', joga o po', joga o popô, vai
+
+Vai, ahn, joga o popô, vai
+Ahn, ahn, joga o popô, vai
+Vai, ahn, joga o popô, vai
+Ahn, ahn, joga o popô, vai
+
+Joga o po', joga o po', joga o po', joga o po'
+Joga o po', joga o po', joga o popô, vai
+Joga o po', joga o po', joga o po', joga o po'
+Joga o po', joga o po', joga o popô, vai
+
+Vai, vai, vai, vai
+Vai, vai, joga o popô, vai
+Vai, vai, vai, vai
+Vai, vai, joga o popô, vai
+
+Vai, vai, vai, vai
+Vai, vai, joga o popô, vai
+Vai, vai, vai, vai
+Vai, vai, joga o popô
+    `;
+    
+    document.getElementById('musicname').textContent = "MONTAGEM ALUCINANTE";
+    document.getElementById('music').textContent = "MONTAGEM ALUCINANTE";
+    document.getElementById('musiclogo').src = "";
+    document.getElementById('musicartist').textContent = "DJ ORBITAL";
+    document.getElementById('msgartist').textContent = "Danilo Trujillano, mais conhecido como Iron Master é um jovem de 22 anos que se tornou a mais nova revelação dentro da cena Geek no Brasil. Começou a fazer músicas com uma brincadeira entre amigos e após a segunda postagem, se tornou viral nas demais plataformas com a famosa frase 'Raça absoluta, além da consciência'. A partir deste momento, Iron começou a produzir músicas voltadas para o público Nerd/Geek, Gamer e Amante de desenhos, expandindo o nicho Geek, que até então, era voltado para a produção de músicas sobre animes. Suas músicas variam desde Rock à Jazz, contando com guitarras, batidas eletrônicas e muito mais. Sua música mais popular é o rap da animação 'Ben 10 Força Alienígena' lançada em 24 de Dezembro de 2020. Atualmente Iron tem uma linha de camisetas com as frases mais marcantes de suas músicas mais famosas e vem se aprimorando cada vez mais para abranger toda a comunidade. O canal Iron Master conta com mais de 1 milhão de inscritos e mais de 270 milhões de visualizações, recebendo feedbacks e comentários constantes do público da comunidade geek.";
+    document.getElementById('musicvideo').style.display = "block"; // Mostra o vídeo
+    document.getElementById('musicvideo').querySelector('source').src = ""; // Vídeo da música
+    document.getElementById('artistimg').src = "https://yt3.googleusercontent.com/LbhsmbjV50pJngJrXoCPlwLNvh6dsNhSAepCZHGGL92Vexks7GxPuvR_eztGYW7-uJYiSa2C2w=s160-c-k-c0x00ffffff-no-rj"; // Foto do artista
+    document.getElementById("lyrics").innerHTML = texto;
+    document.getElementById('sobre').style.backgroundImage = "url('')"; // Foto do artista
+    document.getElementById('credits').innerHTML = "O Homem de Roxo<br><br>Interpretada por<br>NeKo Music<br><br>Composta por<br>Alisson Barbosa Chagas<br><br>Produzida por<br>-<br><br>Fonte: Neko";
+    document.getElementById('video-background').src = '';
+    mudarFundo('musica42');
+
+    // Atualiza o áudio que vai tocar
+    document.getElementById('audio').src = "Material/MONTAGEM ALUCINANTE - DJ ORBITAL.mp3"; // Troca o áudio
+
+} else if (musica === '43') {
+    // Muda para a primeira música
+    let texto = "Letra disponivel em breve!";
+    
+    document.getElementById('musicname').textContent = "MONTAGEM BATCHI";
+    document.getElementById('music').textContent = "MONTAGEM BATCHI";
+    document.getElementById('musiclogo').src = "";
+    document.getElementById('musicartist').textContent = "MXZI";
+    document.getElementById('msgartist').textContent = "Danilo Trujillano, mais conhecido como Iron Master é um jovem de 22 anos que se tornou a mais nova revelação dentro da cena Geek no Brasil. Começou a fazer músicas com uma brincadeira entre amigos e após a segunda postagem, se tornou viral nas demais plataformas com a famosa frase 'Raça absoluta, além da consciência'. A partir deste momento, Iron começou a produzir músicas voltadas para o público Nerd/Geek, Gamer e Amante de desenhos, expandindo o nicho Geek, que até então, era voltado para a produção de músicas sobre animes. Suas músicas variam desde Rock à Jazz, contando com guitarras, batidas eletrônicas e muito mais. Sua música mais popular é o rap da animação 'Ben 10 Força Alienígena' lançada em 24 de Dezembro de 2020. Atualmente Iron tem uma linha de camisetas com as frases mais marcantes de suas músicas mais famosas e vem se aprimorando cada vez mais para abranger toda a comunidade. O canal Iron Master conta com mais de 1 milhão de inscritos e mais de 270 milhões de visualizações, recebendo feedbacks e comentários constantes do público da comunidade geek.";
+    document.getElementById('musicvideo').style.display = "block"; // Mostra o vídeo
+    document.getElementById('musicvideo').querySelector('source').src = ""; // Vídeo da música
+    document.getElementById('artistimg').src = "https://lyricstranslate.com/files/styles/artist/public/ab676161000051740418a632c96b3fa7dbb830cb.jpg"; // Foto do artista
+    document.getElementById("lyrics").innerHTML = texto;
+    document.getElementById('sobre').style.backgroundImage = "url('')"; // Foto do artista
+    document.getElementById('credits').innerHTML = "O Homem de Roxo<br><br>Interpretada por<br>NeKo Music<br><br>Composta por<br>Alisson Barbosa Chagas<br><br>Produzida por<br>-<br><br>Fonte: Neko";
+    document.getElementById('video-background').src = '';
+    mudarFundo('musica43');
+
+    // Atualiza o áudio que vai tocar
+    document.getElementById('audio').src = "Material/MONTAGEM BATCHI - MXZI.mp3"; // Troca o áudio
+    
+} else if (musica === '44') {
+    // Muda para a primeira música
+    let texto = "Letra disponivel em breve!";
+    
+    document.getElementById('musicname').textContent = "Harry Porra";
+    document.getElementById('music').textContent = "Harry Porra";
+    document.getElementById('musiclogo').src = "";
+    document.getElementById('musicartist').textContent = "Mc Maha";
+    document.getElementById('msgartist').textContent = "Danilo Trujillano, mais conhecido como Iron Master é um jovem de 22 anos que se tornou a mais nova revelação dentro da cena Geek no Brasil. Começou a fazer músicas com uma brincadeira entre amigos e após a segunda postagem, se tornou viral nas demais plataformas com a famosa frase 'Raça absoluta, além da consciência'. A partir deste momento, Iron começou a produzir músicas voltadas para o público Nerd/Geek, Gamer e Amante de desenhos, expandindo o nicho Geek, que até então, era voltado para a produção de músicas sobre animes. Suas músicas variam desde Rock à Jazz, contando com guitarras, batidas eletrônicas e muito mais. Sua música mais popular é o rap da animação 'Ben 10 Força Alienígena' lançada em 24 de Dezembro de 2020. Atualmente Iron tem uma linha de camisetas com as frases mais marcantes de suas músicas mais famosas e vem se aprimorando cada vez mais para abranger toda a comunidade. O canal Iron Master conta com mais de 1 milhão de inscritos e mais de 270 milhões de visualizações, recebendo feedbacks e comentários constantes do público da comunidade geek.";
+    document.getElementById('musicvideo').style.display = "block"; // Mostra o vídeo
+    document.getElementById('musicvideo').querySelector('source').src = ""; // Vídeo da música
+    document.getElementById('artistimg').src = "https://yt3.googleusercontent.com/LbhsmbjV50pJngJrXoCPlwLNvh6dsNhSAepCZHGGL92Vexks7GxPuvR_eztGYW7-uJYiSa2C2w=s160-c-k-c0x00ffffff-no-rj"; // Foto do artista
+    document.getElementById("lyrics").innerHTML = texto;
+    document.getElementById('sobre').style.backgroundImage = "url('')"; // Foto do artista
+    document.getElementById('credits').innerHTML = "O Homem de Roxo<br><br>Interpretada por<br>NeKo Music<br><br>Composta por<br>Alisson Barbosa Chagas<br><br>Produzida por<br>-<br><br>Fonte: Neko";
+    document.getElementById('video-background').src = '';
+    mudarFundo('musica44');
+
+    // Atualiza o áudio que vai tocar
+    document.getElementById('audio').src = "Material/Harry Porra - Mc Maha.mp3"; // Troca o áudio
+    
+} else if (musica === '45') {
+    // Muda para a primeira música
+    let texto = "Letra disponivel em breve!";
+    
+    document.getElementById('musicname').textContent = "Nada Nada";
+    document.getElementById('music').textContent = "Nada Nada";
+    document.getElementById('musiclogo').src = "";
+    document.getElementById('musicartist').textContent = "Jmilton";
+    document.getElementById('msgartist').textContent = "Danilo Trujillano, mais conhecido como Iron Master é um jovem de 22 anos que se tornou a mais nova revelação dentro da cena Geek no Brasil. Começou a fazer músicas com uma brincadeira entre amigos e após a segunda postagem, se tornou viral nas demais plataformas com a famosa frase 'Raça absoluta, além da consciência'. A partir deste momento, Iron começou a produzir músicas voltadas para o público Nerd/Geek, Gamer e Amante de desenhos, expandindo o nicho Geek, que até então, era voltado para a produção de músicas sobre animes. Suas músicas variam desde Rock à Jazz, contando com guitarras, batidas eletrônicas e muito mais. Sua música mais popular é o rap da animação 'Ben 10 Força Alienígena' lançada em 24 de Dezembro de 2020. Atualmente Iron tem uma linha de camisetas com as frases mais marcantes de suas músicas mais famosas e vem se aprimorando cada vez mais para abranger toda a comunidade. O canal Iron Master conta com mais de 1 milhão de inscritos e mais de 270 milhões de visualizações, recebendo feedbacks e comentários constantes do público da comunidade geek.";
+    document.getElementById('musicvideo').style.display = "block"; // Mostra o vídeo
+    document.getElementById('musicvideo').querySelector('source').src = ""; // Vídeo da música
+    document.getElementById('artistimg').src = "https://yt3.googleusercontent.com/LbhsmbjV50pJngJrXoCPlwLNvh6dsNhSAepCZHGGL92Vexks7GxPuvR_eztGYW7-uJYiSa2C2w=s160-c-k-c0x00ffffff-no-rj"; // Foto do artista
+    document.getElementById("lyrics").innerHTML = texto;
+    document.getElementById('sobre').style.backgroundImage = "url('')"; // Foto do artista
+    document.getElementById('credits').innerHTML = "O Homem de Roxo<br><br>Interpretada por<br>NeKo Music<br><br>Composta por<br>Alisson Barbosa Chagas<br><br>Produzida por<br>-<br><br>Fonte: Neko";
+    document.getElementById('video-background').src = '';
+    mudarFundo('musica45');
+
+    // Atualiza o áudio que vai tocar
+    document.getElementById('audio').src = "Material/Nada Nada - Jmilton.mp3"; // Troca o áudio
+} else if (musica === '46') {
+    // Muda para a primeira música
+    let texto = "Letra disponivel em breve!";
+    
+    document.getElementById('musicname').textContent = "MELODIA DA SELVA (Tiktok Version)";
+    document.getElementById('music').textContent = "MELODIA DA SELVA (Tiktok Version)";
+    document.getElementById('musiclogo').src = "";
+    document.getElementById('musicartist').textContent = "DJ MH";
+    document.getElementById('msgartist').textContent = "Danilo Trujillano, mais conhecido como Iron Master é um jovem de 22 anos que se tornou a mais nova revelação dentro da cena Geek no Brasil. Começou a fazer músicas com uma brincadeira entre amigos e após a segunda postagem, se tornou viral nas demais plataformas com a famosa frase 'Raça absoluta, além da consciência'. A partir deste momento, Iron começou a produzir músicas voltadas para o público Nerd/Geek, Gamer e Amante de desenhos, expandindo o nicho Geek, que até então, era voltado para a produção de músicas sobre animes. Suas músicas variam desde Rock à Jazz, contando com guitarras, batidas eletrônicas e muito mais. Sua música mais popular é o rap da animação 'Ben 10 Força Alienígena' lançada em 24 de Dezembro de 2020. Atualmente Iron tem uma linha de camisetas com as frases mais marcantes de suas músicas mais famosas e vem se aprimorando cada vez mais para abranger toda a comunidade. O canal Iron Master conta com mais de 1 milhão de inscritos e mais de 270 milhões de visualizações, recebendo feedbacks e comentários constantes do público da comunidade geek.";
+    document.getElementById('musicvideo').style.display = "block"; // Mostra o vídeo
+    document.getElementById('musicvideo').querySelector('source').src = ""; // Vídeo da música
+    document.getElementById('artistimg').src = "https://yt3.googleusercontent.com/LbhsmbjV50pJngJrXoCPlwLNvh6dsNhSAepCZHGGL92Vexks7GxPuvR_eztGYW7-uJYiSa2C2w=s160-c-k-c0x00ffffff-no-rj"; // Foto do artista
+    document.getElementById("lyrics").innerHTML = texto;
+    document.getElementById('sobre').style.backgroundImage = "url('')"; // Foto do artista
+    document.getElementById('credits').innerHTML = "O Homem de Roxo<br><br>Interpretada por<br>NeKo Music<br><br>Composta por<br>Alisson Barbosa Chagas<br><br>Produzida por<br>-<br><br>Fonte: Neko";
+    document.getElementById('video-background').src = '';
+    mudarFundo('musica46');
+
+    // Atualiza o áudio que vai tocar
+    document.getElementById('audio').src = "Material/MELODIA DA SELVA (Tiktok Version).mp3"; // Troca o áudio
+
+} else if (musica === '47') {
+    // Muda para a primeira música
+    let texto = "Letra disponivel em breve!";
+    
+    document.getElementById('musicname').textContent = "MONTAGEM SANTA FÈ (Sped Up)";
+    document.getElementById('music').textContent = "MONTAGEM SANTA FÈ (Sped Up)";
+    document.getElementById('musiclogo').src = "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/18/e4/f3/18e4f365-2685-a684-7794-c9c2b02d28f8/663918203361.jpg/600x600bb.jpg";
+    document.getElementById('musicartist').textContent = "qaraqshy";
+    document.getElementById('msgartist').textContent = "Danilo Trujillano, mais conhecido como Iron Master é um jovem de 22 anos que se tornou a mais nova revelação dentro da cena Geek no Brasil. Começou a fazer músicas com uma brincadeira entre amigos e após a segunda postagem, se tornou viral nas demais plataformas com a famosa frase 'Raça absoluta, além da consciência'. A partir deste momento, Iron começou a produzir músicas voltadas para o público Nerd/Geek, Gamer e Amante de desenhos, expandindo o nicho Geek, que até então, era voltado para a produção de músicas sobre animes. Suas músicas variam desde Rock à Jazz, contando com guitarras, batidas eletrônicas e muito mais. Sua música mais popular é o rap da animação 'Ben 10 Força Alienígena' lançada em 24 de Dezembro de 2020. Atualmente Iron tem uma linha de camisetas com as frases mais marcantes de suas músicas mais famosas e vem se aprimorando cada vez mais para abranger toda a comunidade. O canal Iron Master conta com mais de 1 milhão de inscritos e mais de 270 milhões de visualizações, recebendo feedbacks e comentários constantes do público da comunidade geek.";
+    document.getElementById('musicvideo').style.display = "block"; // Mostra o vídeo
+    document.getElementById('musicvideo').querySelector('source').src = ""; // Vídeo da música
+    document.getElementById('artistimg').src = "https://yt3.googleusercontent.com/vY88lGqdFxTFyPa-cXFE3UkW9EtE9XcYOt6ewCMg77ZcZLvDHEwh7KszPgWYAiU0S-FWKzDylA=s160-c-k-c0x00ffffff-no-rj"; // Foto do artista
+    document.getElementById("lyrics").innerHTML = texto;
+    document.getElementById('sobre').style.backgroundImage = "url('')"; // Foto do artista
+    document.getElementById('credits').innerHTML = "O Homem de Roxo<br><br>Interpretada por<br>NeKo Music<br><br>Composta por<br>Alisson Barbosa Chagas<br><br>Produzida por<br>-<br><br>Fonte: Neko";
+    document.getElementById('video-background').src = '';
+    mudarFundo('musica47');
+
+    // Atualiza o áudio que vai tocar
+    document.getElementById('audio').src = "Material/MONTAGEM SANTA FÈ (Sped Up) - qaraqshy - Topic.mp3"; // Troca o áudio
 }
 
 audio.load(); // Recarrega o áudio
@@ -2899,6 +3129,7 @@ const video2 = document.getElementById('video-background');
 
 atualizarCapaMusica()
 buscarDescricaoDoArtista()
+atualizarJanelaSecundaria();
 
 video2.play();
 checkVideo();
